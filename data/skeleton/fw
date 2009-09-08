@@ -1,0 +1,8 @@
+#!/usr/bin/php
+<?php
+
+require dirname(__FILE__) . '/conf/application.php';
+$hashbang_buffer = true;
+ob_start();
+require FW_DIR . '/fw';
+

@@ -1,0 +1,7 @@
+homepage:
+  url: ""
+  defaults:
+    controller: index
+    action: index
+
+default: :controller/:action

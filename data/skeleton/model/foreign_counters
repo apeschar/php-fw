@@ -1,0 +1,2 @@
+# OWNER_TABLE           OWNER_ID_COL    OWNER_COUNT_COL         CHILD_TABLE     CHILD_REF_COL
+# user_group            id              user_count              user            user_group_id

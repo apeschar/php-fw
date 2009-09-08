@@ -1,0 +1,16 @@
+#!/usr/bin/php
+<?php
+
+if(isset($hashbang_buffer)) ob_end_clean();
+
+echo "Framework command-line utility\n",
+     "(c) 2009 Albert Peschar\n\n";
+
+require dirname(__FILE__) . '/lib/fwcmd/fwcmd.php';
+
+$arguments = $argv;
+$command = array_shift($arguments);
+
+$c = new fwcmd;
+$c->execute($command, $arguments);
+
