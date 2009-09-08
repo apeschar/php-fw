@@ -1,5 +1,10 @@
 <?php
 
+error_reporting(E_ALL | E_STRICT);
+ini_set('display_errors', true);
+
+if(!defined('FW_DIR')) define('FW_DIR', dirname(__FILE__) . '/../..');
+
 set_include_path(FW_DIR . '/lib/classes' . PATH_SEPARATOR . get_include_path());
 
 require_once 'FWAutoloader.class.php';
